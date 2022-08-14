@@ -1,0 +1,241 @@
+/** Media Queries **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  font-size: 1.6rem;
+  background-color: hsl(210deg, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.contenedor_flex {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 1.6666666667rem 0;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.previa_articulo {
+  margin: 2rem auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .previa_articulo {
+    display: flex;
+    margin: 4rem auto;
+  }
+}
+.previa_articulo picture {
+  flex: 0.8;
+}
+.previa_articulo .imagen_header {
+  border-radius: 1rem 1rem 0 0;
+  min-height: 100%;
+}
+@media (min-width: 768px) {
+  .previa_articulo .imagen_header {
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+.previa_articulo .seccion_sm {
+  padding: 3rem 3rem 1rem 3rem;
+  position: relative;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .previa_articulo .seccion_sm {
+    padding: 5rem 5rem 3rem 5rem;
+  }
+}
+.previa_articulo .seccion_sm h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 2.5rem;
+  color: hsl(217deg, 19%, 35%);
+}
+@media (min-width: 768px) {
+  .previa_articulo .seccion_sm h3 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+.previa_articulo .seccion_sm p {
+  color: hsl(214deg, 17%, 51%);
+}
+@media (min-width: 768px) {
+  .previa_articulo .seccion_sm p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.informacion .imagen_avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.icono_share {
+  z-index: 10;
+}
+.icono_share .bx {
+  padding: 0.7rem;
+  background-color: hsl(210deg, 46%, 95%);
+  border-radius: 50%;
+}
+.icono_share .bx.activo {
+  background-color: hsl(214deg, 17%, 51%);
+  color: rgb(255, 255, 255) !important;
+}
+.icono_share .bx:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: hsl(214deg, 17%, 51%);
+  cursor: pointer;
+}
+
+.informacion_perfil {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.informacion_perfil .info .nombre {
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+  margin: 0;
+}
+.informacion_perfil .info .fecha {
+  margin: 0;
+}
+
+.contenedor_share-mobile {
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  width: 0%;
+  position: absolute;
+  background-color: hsl(217deg, 19%, 35%);
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition-property: visibility width opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+}
+.contenedor_share-mobile.mostrar {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.contenedor_share-desktop {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: hsl(217deg, 19%, 35%);
+  padding: 0 3rem;
+  border-radius: 1rem;
+  bottom: 10rem;
+  right: -5.5rem;
+  transition-property: visibility width opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+.contenedor_share-desktop .triangulo {
+  width: 0;
+  height: 0;
+  border: 1rem solid transparent;
+  border-bottom-color: hsl(217deg, 19%, 35%);
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -20px;
+  right: 45%;
+}
+.contenedor_share-desktop.mostrar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.iconos_share {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.iconos_share p {
+  letter-spacing: 0.4rem;
+  color: hsl(210deg, 46%, 95%);
+}
+.iconos_share .iconos {
+  display: flex;
+  gap: 2rem;
+}
+.iconos_share .iconos img {
+  width: 2rem;
+  height: 2rem;
+}
+.iconos_share .iconos img:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=app.css.map */

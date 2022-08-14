@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Vista previa del articulo</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+  <main class="contenedor_flex">
+
+    <section class="contenedor previa_articulo">
+
+      <picture>
+        <source srcset="build/img/drawers.webp" type="image/webp">
+        <source srcset="build/img/drawers.jpg" type="image/jpg">
+        <img class="imagen_header" src="build/img/drawers.jpg" alt="Imagen header">
+      </picture>
+
+      <div class="seccion_sm">
+
+        <h3>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
+
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
+          got some simple tips to help you make any room feel complete.
+        </p>
+
+        <div class="informacion">
+
+          <div class="informacion_perfil">
+            <img src="build/img/avatar-michelle.jpg" class="imagen_avatar" alt="imagen avatar">
+
+            <div class="info">
+              <p class="nombre">Michelle Appleton</p>
+              <p class="fecha">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="icono_share">
+            <a id="boton_share" class='bx bxs-share bx-md bx-flip-horizontal' style='color:#6e8098'></a>
+          </div>
+        </div>
+
+        <div class="contenedor_share-mobile">
+
+          <div class="iconos_share"> 
+            <p>SHARE</p>
+
+            <div class="iconos">
+              <img src="build/img/icon-facebook.svg" alt="icono facebook">
+              <img src="build/img/icon-twitter.svg" alt="icono twitter">
+              <img src="build/img/icon-pinterest.svg" alt="icono pinterest">
+            </div>
+          </div>
+
+        </div> <!-- .contenedor_share-mobile -->
+
+        <div class="contenedor_share-desktop">
+          <div class="iconos_share"> 
+            <p>SHARE</p>
+
+            <div class="iconos">
+              <img src="build/img/icon-facebook.svg" alt="icono facebook">
+              <img src="build/img/icon-twitter.svg" alt="icono twitter">
+              <img src="build/img/icon-pinterest.svg" alt="icono pinterest">
+            </div>
+
+            <div class="triangulo"></div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <script src="build/js/app.js"></script>
+
+</body>
+
+</html>
