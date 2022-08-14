@@ -33,8 +33,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución: [Repositorio Git]()
-- URL del sitio en vivo: [Sitio en Netlify]()
+- URL de la solución: [Repositorio Git](https://github.com/jean266/Vista_previa_articulo)
+- URL del sitio en vivo: [Sitio en Netlify](https://relaxed-pavlova-35b067.netlify.app/)
 
 ## Mi proceso
 
